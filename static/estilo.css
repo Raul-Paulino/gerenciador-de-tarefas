@@ -1,0 +1,113 @@
+/* Configuração geral e fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Card centralizado */
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Campo de entrada e botão */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    outline: none;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #4f46e5;
+}
+
+button {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #4338ca;
+}
+
+/* Lista de tarefas */
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: #f9fafb;
+    border: 1px solid #edf2f7;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: #4a5568;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para alinhar checkbox e texto dentro do li */
+li {
+    background-color: #f9fafb;
+    border: 1px solid #edf2f7;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: #4a5568;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Espaço entre a caixinha e o texto */
+}
+
+/* Tamanho e estilo da checkbox */
+li input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #4f46e5;
+}
+
+/* Efeito quando a tarefa é marcada como concluída */
+.concluida {
+    text-decoration: line-through;
+    color: #a0aec0;
+}
